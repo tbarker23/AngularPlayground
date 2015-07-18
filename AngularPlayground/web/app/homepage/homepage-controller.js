@@ -1,7 +1,8 @@
 (function(){
      'use strict';
     
-    angular.module('homepage',[]).controller('homepageController', homepageController);
+    angular.module('homepage',[])
+            .controller('homepageController', homepageController);
     
     homepageController.$inject = ['$scope','HomePageModel'];
     

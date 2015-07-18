@@ -1,5 +1,7 @@
 <div>
-    <h1 class="col-xs-12 center" style="text-align: center">{{vm.controllerName}}</h1>
-    <div class="col-xs-6">Raw JSON from our API: {{vm.homepageJSONObject}}</div>
-    <div class="col-xs-6">Referenced JSON Field (welcomeMessage): {{vm.homepageJSONObject.welcomeMessage}}</div>    
+    <h1 class="col-xs-12" style="text-align: center;">Homepage</h1>
+    <h2 class="col-xs-12 center" style="text-align: center">{{vm.controllerName}}</h2>
+    <div class="col-xs-6">Raw JSON from our API: <span style="background: yellow">{{vm.homepageJSONObject}}</span></div>
+    <div class="col-xs-6">Referenced JSON Field (welcomeMessage): <span style="background: yellow">{{vm.homepageJSONObject.welcomeMessage}}</span></div>    
 </div>
+<a class="col-xs-12" href="./#/secondPage" style="font-size: medium; text-align: center;">goto second page</a>
