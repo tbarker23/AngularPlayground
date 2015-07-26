@@ -1,7 +1,17 @@
+<!-- Homepage.html -->
+
+<!-- col-xs-<number 1- 12> are default bootstrap classes can be read up on here 
+     http://getbootstrap.com/examples/grid/
+     items in the {{  }} are references to variables declared and assigned in our 
+     controller (hompage-controller.js) which is loaded when the page is loaded
+     because our routeProvider tells angular that the homepageController is associated
+     with this partial view -->
 <div>
     <h1 class="col-xs-12" style="text-align: center;">Homepage</h1>
     <h2 class="col-xs-12 center" style="text-align: center">{{vm.controllerName}}</h2>
     <div class="col-xs-6">Raw JSON from our API: <span style="background: yellow">{{vm.homepageJSONObject}}</span></div>
     <div class="col-xs-6">Referenced JSON Field (welcomeMessage): <span style="background: yellow">{{vm.homepageJSONObject.welcomeMessage}}</span></div>    
 </div>
+<!-- This link will take you to the second page module (html, controller and model in /app/secondpage 
+     Route is configured in angularPlayground.js as /secondPage, accessed by /#/secondPage in html -->
 <a class="col-xs-12" href="./#/secondPage" style="font-size: medium; text-align: center;">goto second page</a>

@@ -15,7 +15,13 @@
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" />
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
     </head>
+    <!-- the ng-app attribute is what tells our html page that this is an 
+         angular app, and to use the module with representing the app
+         described by the text passed in via quotes. -->
     <body ng-app="AngularPlayground">
+        <!-- ng-view=""  is just where the partial html pages are injected in 
+             from the route provider (this is typically in the javascript file 
+             that is described in the ng-app attr) -->
         <div ng-view=""></div>
         
         <!-- Main app controller -->
@@ -28,5 +34,6 @@
         <!-- Second Page -->
         <script src="./app/secondpage/secondPage-controller.js"></script>
         <script src="./app/secondpage/secondPage-model.js"></script>
+        <!-- Must include any other .js files that you create here -->
     </body>
 </html>

@@ -1,6 +1,16 @@
 /* WebChat Angular Module - Parent Module */
 
+
+/*this is the module declaration.  this describes the parent app (found in ng-app=""
+ * in the index.html file. items in the [] are dependencies and are required 
+ * for functionality in the app.  they are all modules described in .js files
+ */
 angular.module('AngularPlayground',['ngRoute', 'ngResource', 'homepage', 'secondPage'])
+        /*
+         * .config is how we configure the routeProvider to handle differnt urls
+         * passed in after the base url eg /angularPlayground/yourpage will 
+         * map to a template url and controller provided below
+         */
        .config(['$routeProvider', function ($routeProvider) {
                $routeProvider
                         .when("/", {
